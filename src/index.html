@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- custom render.js  -->
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+    <script defer src="render.js"></script>
+  </head>
+  <body>
+    <div id="modal" class="d-none">
+      <h3>White Text : <input type="checkbox" id="whitetext"></h3>
+      <h3>Owner : <input type="text" id="owner"></h3>
+      <h3>Repository : <input type="text" id="repo"></h3>
+      <button id="save">save</button><button id="close">close</button>
+    </div>
+    <div id="main">
+      <div class="header">
+        <h1 class="draggable">Github Focuser</h1>
+        <button type="button" id="config">🎮</button>
+      </div>
+      <div id="container">
+      </div>
+    </div>
+  </body>
+</html>
