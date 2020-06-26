@@ -5,7 +5,7 @@
 <div align="center">
 
 [![GitHub license](https://img.shields.io/github/license/Edenskull/Github-Focuser?color=blue&style=for-the-badge)](https://github.com/Edenskull/Github-Focuser/blob/master/LICENSE)
-![Sonar Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=Edenskull_Github-Focuser&metric=alert_status)
+![Sonar Quality Gate](https://img.shields.io/sonar/quality_gate/Edenskull_Github-Focuser?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge)
 
 </div>
 
