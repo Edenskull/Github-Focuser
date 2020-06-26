@@ -18,7 +18,8 @@ function getLastCommit() {
             for(var i = 0; i < entries.length; i++) {
                 shaArray.push($(entries[i]).attr('id'))
             }
-            data.forEach(row => {
+            var reverseData = data.reverse();
+            reverseData.forEach(row => {
                 let message = row.commit.message;
                 let committer = row.author.login;
                 let commitUrl = row.html_url;
@@ -40,7 +41,7 @@ function getLastCommit() {
                         <p>Comitted At : ${date.toLocaleDateString('fr-FR', options)}</p>
                         </div>
                         </div>`
-                    $('#container').append(html);
+                    $('#container').prepend(html);
                 } else {
                     if (shaArray.indexOf(sha) == -1) {
                         var html = `<div class="subDiv" id="${sha}">
@@ -53,7 +54,7 @@ function getLastCommit() {
                             <p>Comitted At : ${date.toLocaleDateString('fr-FR', options)}</p>
                             </div>
                             </div>`
-                        $('#container').append(html);
+                        $('#container').prepend(html);
                     }
                 }
                 increment++;
